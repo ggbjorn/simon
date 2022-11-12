@@ -64,9 +64,25 @@ function nextSequence(){
 
 //$("button".id(randomChosenColour).animate(transition: 1s ease;).animate(brightness:3;));
 
+//ALTERNATE way which plays the sequence prior to the new addition. Cannot get the timing right
+
+/*  for (let i = 0; i < gamePattern.length; i++) {
+    setTimeout(function() {
+      $("#" + gamePattern[i]).fadeIn(100).fadeOut(100).fadeIn(100);
+            }, 1000);
+      playSound(gamePattern[i]);
+
+    }
+*/
+
+
+
+//COMMENT out next two lines if playing sequence prior
 $("#" + randomChosenColour).fadeIn(100).fadeOut(100).fadeIn(100);
 playSound(randomChosenColour);
-}
+
+  }
+
 
 
 function playSound(name) {
